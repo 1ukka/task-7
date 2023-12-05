@@ -9,7 +9,7 @@ const data = fs.readFileSync("./users.json", "utf8");
 const users = JSON.parse(data);
 
 app.get("/", (req, res) => {
-  res.send(users);
+  res.send("Hello Lukka in the house");
 });
 
 app.get("/users", (req, res) => {
